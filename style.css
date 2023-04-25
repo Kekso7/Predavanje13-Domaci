@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.vh-100 {
+	height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.leftImage {
+	width: 100%;
+	height: 100%;
+}
+
+.w-45 {
+	width: 45%;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.springBackground {
+	background-color: rgb(137, 116, 72);
+}
+
+.rotatedText {
+	transform: rotate(90deg);
+	margin-top: 350px;
+	white-space: nowrap;
+	font-size: 2rem;
+	transition: 1s;
+}
+
+.rotatedText:hover {
+	color: rgb(77, 84, 41);
+	cursor: pointer;
+	transition: 1s;
+}
+
+.rightContent {
+	padding: 2.5rem;
+}
+
+.rightContent h1 {
+	font-size: 2.5rem;
+}
+
+.rightContent p {
+	font-size: 1.5rem;
+}
+
+.horizontalLine {
+	height: 5px;
+	background-color: rgb(137, 116, 72);
+	border: 1px solid rgb(137, 116, 72);
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 100%;
+	transition: 2s ease;
+}
+
+.horizontalLine:hover {
+	width: 10%;
+}
+
+@media only screen and (max-width: 640px) {
+	.columnMob {
+		flex-direction: column;
+	}
+
+	.w-10,
+	.w-45 {
+		width: 100%;
+	}
+
+	.rotatedText {
+		transform: rotate(0deg);
+		margin-top: 0px;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.rightContent {
+		padding: 0px;
+		margin-top: 20px;
+	}
+}
